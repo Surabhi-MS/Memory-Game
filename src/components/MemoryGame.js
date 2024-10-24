@@ -38,8 +38,6 @@ const MemoryGame = () => {
   }, [timeLeft]);
 
   const handleCard = (value, id, gameId) => {
-    console.log();
-
     setCardFlip((prev) => ({ cardFlip: !prev.cardFlip }));
     setCount(count + 1);
     let newGameId = [{ ...gameId }];
@@ -50,7 +48,6 @@ const MemoryGame = () => {
   };
   const handleGame = () => {
     // console.log("gameId", gameId);
-    console.log("game", gameIdNew);
   };
 
   return (
